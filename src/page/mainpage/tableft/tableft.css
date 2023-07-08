@@ -1,0 +1,34 @@
+.container{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.child1{
+
+    margin: 100px;
+}
+
+
+
+.ButtonGroup{
+ display: flex; 
+ justify-content: center;  
+}
+
+
+@media (max-width: 1079px) {
+    .ButtonGroup{
+        display: block; 
+        justify-content: center;  
+        
+    }
+
+
+    .child1{
+        margin: 0;
+        border: 1px red solid;
+    }
+
+}
+

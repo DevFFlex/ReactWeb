@@ -1,0 +1,72 @@
+.page{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+
+.banner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    transition: 1s;
+    transition-delay: 1s;
+    z-index: 2;
+}
+
+
+.tableft{
+    position: absolute;
+    width: 20%;
+    height: 100vh;
+    z-index: 3;
+    border-right: 10px rgb(0, 153, 255) solid;
+    background-color: rgb(13, 0, 34);
+
+    left: -20%;
+    transition: 1s;
+    transition-delay: 1s;
+
+    
+}
+
+.tableft:hover {
+    transition: 0.5s;
+    left: 0;
+}
+
+.tableft:hover ~ .banner { 
+    transition: 0.5s;
+    left: 10%;
+}
+
+
+@keyframes tabSlideOpen {
+
+    0%{
+        transform: translateX(-95%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+    
+}
+
+@keyframes tabSlideClose {
+
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-95%);
+    }
+    
+}
+
+
+
+@media (max-width: 1079px) {
+    
+
+}

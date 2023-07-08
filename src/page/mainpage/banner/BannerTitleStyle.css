@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+  
+  :root {
+    --background: #060608;
+    --color: #FAFAFA;
+    --textSizeVar :200px;
+  }
+
+
+  .left{
+    width: 50%;
+    text-align: start;
+    font-size: calc(var(--textSizeVar) - var(--textSizeVar) / 1.5);
+  }
+
+  .center{
+    font-size: var(--textSizeVar);
+    text-align: center;
+  }
+
+  .right{
+    font-size: calc(var(--textSizeVar) - var(--textSizeVar) / 1.5);
+    text-align: end;
+  }
+
+
+
+
+
+  .BannerTitleContainer{
+    width: 100%;
+    
+    /* border: 2px solid rgb(246, 255, 0); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(to right, #ffffff,#6987ff, #f70aff,#ff0606);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: 'Anton';
+
+    z-index: 1;
+
+    animation: fadeIn 2s ease-in-out 1,movement 30s ease-in-out infinite;
+    
+}
+
+
+@keyframes movement {
+    0%{
+        transform: translateY(30px);
+    }
+    50%{
+        transform: translateY(-70px);
+    }
+    100%{
+        transform: translateY(30px);
+    }
+}
+
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  
